@@ -14,19 +14,22 @@ evenWord('potato')
 
 **Solution:**
 ```js
-function removeCharCount (str) {
+function evenWord(str) {
  let removeCount = 0;
- let letterCount = 0;
- for (var a = 0; a <= str.length; a++) {
- 	for (var b = 0; b <= str.length; b++) {
-   if (str[a] == str[b]) {
-   	letterCount++;
-   }
-  }
-  if (letterCount > 1 && letterCount % 2 != 0) {
-  	removeCount++
+ let object = {};
+ for (var a = 0; a < str.length; a++) {
+	if (object[str[a]] == null) {
+  	object[str[a]] = 1;
+  } else {
+  	object[str[a]]++;
   }
  }
+  let letterNum = Object.values(object);
+   for (var b = 0; b < letterNum.length; b++) {
+     if (letterNum[b] % 2 != 0) {
+        removeCount++;
+      }
+    }
  return removeCount;
 }
 ```
