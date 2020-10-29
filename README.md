@@ -3,6 +3,15 @@ Solutions for the 'interview question of the week' section from Cassidy Williams
 ## 4/02/20 Issue
 Given that an "even word" is a word in which each character appears an even number of times, write a function that takes in a string and returns the minimum number of letters to be removed to make that string an even word.
 
+Example:
+```
+evenWord('aaaa')
+> 0
+
+evenWord('potato')
+> 2
+```
+
 **Solution:**
 ```js
 function removeCharCount (str) {
