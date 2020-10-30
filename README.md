@@ -50,7 +50,7 @@ isInTriangle(triangle, [3,2])
 ```
 
 Solution:
-```
+```js
 function isInTriangle(triangle, point) {
   let results = [];
   for (let a = 0; a < triangle.length; a++) {
