@@ -80,3 +80,10 @@ function dotProduct(line, point) {
 }
 ```
 
+## 18/02/20 Issue #131
+
+Build a typing speed test/game.
+
+Solution:
+https://codepen.io/intheforestlost/pen/BazvPvj?editors=1011
+
